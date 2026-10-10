@@ -117,4 +117,6 @@ src/city_commute/
 测试使用 Mock 数据和 HTTPX MockTransport，不访问外部服务、不消耗 LLM 额度。覆盖四城市端到端、未知城市占位、句数/字数配置、错误输入、JSON 文件读写、已有文件保护、实际模块入口、评分、LLM 请求/重试/失败退出。
 第二阶段真实 OSM/Wikidata 接入计划见 [设计文档](docs/design.md)。
 
+原始讨论中的完整技术设计草案已存档于根目录 [TECHNICAL_DESIGN.md](TECHNICAL_DESIGN.md)。其中部分界面、数据接入及参数属于原设计规划，当前实现和使用方式以本 README 为准。
+
 本次验证环境为 Windows / Python 3.13.5：25 项测试通过，实际命令行生成及 JSON 保存成功。未调用真实 LLM 或地理数据接口，未进行 Python 3.11 环境矩阵测试。
